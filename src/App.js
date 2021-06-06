@@ -1,18 +1,23 @@
-// DO NOT DELETE
-
-import * as React from 'react'
+import React, {useState} from 'react'
 import './App.css'
+import {Header} from './Header'
+import {Description} from './Description'
+import {DogListContainer} from './DogListContainer'
 
 /**
  * 
  * @type {React.FC}
  */
-export const App = () => {
+
+export function App() {
+
   return (
-    <div>
-      <header>manulネコ</header>
-      <h2>manulネコ言うてんのに犬やんけ！</h2>
-      <img src="https://images.dog.ceo/breeds/akita/Japaneseakita.jpg" alt="ランダムな犬の画像"></img>
-    </div>
+  <>
+    <Header />
+    <body>
+      <Description />
+      <DogListContainer />
+    </body>
+  </>
   )
 }
